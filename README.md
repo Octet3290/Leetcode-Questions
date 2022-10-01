@@ -15,7 +15,7 @@
 * In forked repository select the topic folder where you want to add the program.
 * Then select the programming language folder in which you want to add the program.
 * If you can't find the folder create the folder and  then add your program.
-* for example check this folder [Array](https://github.com/avinash201199/DSA-Questions/tree/main/Array)
+* for example check this folder [Array](https://github.com/Octet3290/Leetcode-Questions/tree/main/C%2B%2B/array)
 * Make your pull request with issue number by using # 
 * Wait for review.
 
