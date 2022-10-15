@@ -1,0 +1,34 @@
+class Solution {
+    inline int getLength(ListNode* head) {
+        int len = 0;
+        while(head) {
+            len++;
+            head = head->next;
+        }
+        return len;
+    }
+public:
+    ListNode* rotateRight(ListNode* head, int k) {
+        if(!head)   return head;
+        
+        // calculate length and update k
+        int len = getLength(head);
+        k = k % len;
+        
+        // get the required nodes
+        ListNode *fast = head, *slow = head;
+        while(k--)
+            fast = fast->next;
+        while(fast->next) {
+            slow = slow->next;
+            fast = fast->next;
+        }
+        
+        // form the new links
+        fast->next = head;
+        head = slow->next;
+        slow->next = NULL;
+        
+        return head;
+    }
+};
